@@ -1,8 +1,71 @@
+/* General styles */
 body {
     background-color: #0d1b2a; /* Dark background color */
     color: #e0e1dd; /* Light text color for readability */
     font-family: "Poppins", sans-serif; /* Apply the modern font */
     transition: background-color 0.3s; /* Smooth background transition */
+}
+
+header {
+    padding: 20px 0; /* Adjust header padding */
+}
+
+/* Navigation styles */
+.nav {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: center; /* Center the items */
+}
+
+.nav-item {
+    margin: 0 15px; /* Space between nav items */
+}
+
+.nav-link {
+    color: #e0e1dd; /* Default link color */
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium font weight */
+    padding: 10px 15px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition:
+        background-color 0.3s,
+        color 0.3s; /* Smooth transition */
+}
+
+.nav-link:hover {
+    background-color: #415a77; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+}
+
+.nav-link.active {
+    font-weight: bold; /* Bold text for active link */
+    background-color: #415a77; /* Active background color */
+    color: #ffffff; /* Active text color */
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #778da9; /* Primary button color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 20px; /* Padding for buttons */
+    color: #ffffff; /* White text color */
+    font-weight: 600; /* Bold text */
+    transition:
+        background-color 0.3s,
+        transform 0.3s; /* Smooth transition */
+}
+
+.btn-primary:hover {
+    background-color: #415a77; /* Darker shade on hover */
+    transform: scale(1.05); /* Slight scale effect on hover */
+}
+
+footer {
+    font-size: 0.9rem; /* Smaller footer font size */
+    padding: 10px 0; /* Padding for footer */
 }
 
 body:hover {
@@ -74,4 +137,30 @@ h2:hover {
 
 footer {
     font-size: 0.9rem; /* Smaller footer font size */
+}
+
+/* Contact page styles */
+.contact-container {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: calc(50vh - 80px); /* Full viewport height minus header height */
+    padding: 20px; /* Padding around the container */
+    margin-top: 0px; /* Add a small space from the navbar */
+}
+
+.contact-form {
+    width: 100%; /* Full width */
+    max-width: 400px; /* Max width for the form */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Full width for inputs */
+    margin-bottom: 15px; /* Space between inputs */
+}
+
+.contact-form button {
+    width: 100%; /* Full width for button */
 }
