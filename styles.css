@@ -1,0 +1,77 @@
+body {
+    background-color: #0d1b2a; /* Dark background color */
+    color: #e0e1dd; /* Light text color for readability */
+    font-family: "Poppins", sans-serif; /* Apply the modern font */
+    transition: background-color 0.3s; /* Smooth background transition */
+}
+
+body:hover {
+    background-color: #1b263b; /* Darker background on hover */
+}
+
+.bg-rich-black {
+    background-color: #1b263b; /* Darker background for header and footer */
+}
+
+h1,
+h2 {
+    color: #778da9; /* Use light blue for headings */
+    font-weight: 600; /* Use a bolder weight for headings */
+    transition: color 0.3s; /* Smooth heading color transition */
+}
+
+h1:hover,
+h2:hover {
+    color: #415a77; /* Darker heading color on hover */
+}
+
+.project-item {
+    margin: 15px;
+    transition: margin 0.3s; /* Smooth project item margin transition */
+}
+
+.project-item:hover {
+    margin: 10px; /* Adjust project item margin on hover */
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Rounded corners for images */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.project-img:hover {
+    transform: scale(1.05); /* Scale effect on hover */
+}
+
+.card {
+    border: none; /* Remove default card border */
+    background-color: #415a77; /* Dark background for cards */
+    color: #e0e1dd; /* Light text color for cards */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Add subtle shadow */
+    transition: box-shadow 0.3s; /* Smooth shadow transition */
+}
+
+.card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.7); /* Darker shadow on hover */
+}
+
+.card-body {
+    padding: 20px; /* Add padding to card body */
+}
+
+.btn-primary {
+    background-color: #778da9; /* Primary button color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners for buttons */
+    transition: background-color 0.3s; /* Smooth button color transition */
+}
+
+.btn-primary:hover {
+    background-color: #415a77; /* Darker shade on hover */
+}
+
+footer {
+    font-size: 0.9rem; /* Smaller footer font size */
+}
