@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Your Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header class="bg-rich-black text-white text-center py-5">
+            <h1>Your Name</h1>
+            <p>Game Developer | Programmer</p>
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html"
+                            >Portfolio</a
+                        >
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="resume.html">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="loading-spinner" class="text-center" style="display: none">
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+
+        <main class="container mt-5">
+            <section id="portfolio" class="mb-5">
+                <h2 class="text-center">My Projects</h2>
+                <div class="text-center mb-4">
+                    <select
+                        id="filter-select"
+                        class="form-control w-25 d-inline-block"
+                    >
+                        <option value="">All Categories</option>
+                        <option value="Game Development">
+                            Game Development
+                        </option>
+                        <option value="Programming">Programming</option>
+                    </select>
+                    <select
+                        id="sort-select"
+                        class="form-control w-25 d-inline-block"
+                    >
+                        <option value="alphabetical">
+                            Sort Alphabetically
+                        </option>
+                    </select>
+                </div>
+                <div class="row" id="project-gallery">
+                    <!-- Project items will be added here dynamically -->
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-rich-black text-white text-center py-3">
+            <p>&copy; 2023 Your Name. All rights reserved.</p>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="scripts.js"></script>
+    </body>
+</html>
